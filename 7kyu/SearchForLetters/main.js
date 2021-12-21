@@ -9,7 +9,6 @@ to '1', and so on for the rest of the alphabet.
 
 let nulls = '00000000000000000000000000';
 let nullsArr = nulls.split('');
-nullsArr[0] = 1
 
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 
@@ -36,4 +35,4 @@ function change(string) {
   return nullsArr.join('');
 }
 
-console.log((change("a c**& w bZz")))
+console.log((change("")))
