@@ -60,9 +60,9 @@ let myCrazyObject = {
 
 
 //7
-let x = 2;
+// let x = 2;
 
-while (x < 10000) {
-  console.log(x)
-  x = x * 2
-}
+// while (x < 10000) {
+//   console.log(x)
+//   x = x * 2
+// }
