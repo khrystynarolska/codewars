@@ -4,7 +4,11 @@ let words = [
   'javascript',
   'monkey',
   'amazing',
-  'pancake'
+  'pancake',
+  'warm',
+  'husband',
+  'winter',
+  'something'
 ]
 
 // Обираємо випадкове слово
