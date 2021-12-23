@@ -22,19 +22,27 @@ for (let i = 0; i < word.length; i++) {
 
 let remainingLetters = word.length;
 
+let attempts = 3;
+
 // Ігравий цикл
-while (remainingLetters > 0) {
+while (remainingLetters > 0 ) {
   // Показує гравцю його прогрес
   alert(answerArray.join(' '));
 
   // Отримаємо варіанти відповідей від гравця
-  let guess = prompt('Guess a letter, or click Canncel to stop playing.');
+  let guess = prompt('Guess a letter, or click Cancel to stop playing.');
 
   if (guess === null) {
     //Виходимо з ігрвого циклу
     break;
   } else if (guess.length !== 1) {
-    alert('Please enter a single letter.')
+    attempts--;
+    if (attempts === 0) {
+      alert('failed')
+      break;
+    } else {
+      alert('Please enter a single letter.')
+    }
   } else {
     // Оновлюємо стан гри за допомогою змінного параметра guess
     for (let j = 0; j < word.length; j++) {
@@ -49,4 +57,4 @@ while (remainingLetters > 0) {
 
 // Показуємо відповідь та вітаємо гравця
 alert(answerArray.join(' '));
-alert('Good job! The answer was ' + word);
+alert('The answer was ' + word);
