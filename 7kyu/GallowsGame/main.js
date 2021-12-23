@@ -27,7 +27,7 @@ while (remainingLetters > 0) {
   // Показує гравцю його прогрес
   alert(answerArray.join(' '));
 
-  // Отримаємо варіанти відповідк=ей від гравця
+  // Отримаємо варіанти відповідей від гравця
   let guess = prompt('Guess a letter, or click Canncel to stop playing.');
 
   if (guess === null) {
@@ -38,8 +38,8 @@ while (remainingLetters > 0) {
   } else {
     // Оновлюємо стан гри за допомогою змінного параметра guess
     for (let j = 0; j < word.length; j++) {
-      if (word[j] === guess) {
-        answerArray[j] = guess;
+      if (word[j] === guess.toLowerCase()) {
+        answerArray[j] = guess.toLowerCase();
         remainingLetters--;
       }
     }
