@@ -10,10 +10,10 @@ function randomNumb() {
       alert(`Ваше число ${result} більше загаданого. Спроб: ${i}`)
     } else if (result < num) {
       alert(`Ваше число ${result} меньше загаданого. Спроб: ${i}`)
-    } else {
-      return alert(`Ви не вгадали число. Число: ${num}`)
-    }
+    } 
   }
+  
+  return alert(`Ви не вгадали число. Число: ${num}`)
 }
 
 randomNumb()
